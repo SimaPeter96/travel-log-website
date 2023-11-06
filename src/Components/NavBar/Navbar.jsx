@@ -1,15 +1,18 @@
-import React from "react"
-import "./Navbar.css";
-import {TravelLogo} from '../Images/TravelAppLogo.png'
+import React from 'react';
+import './NavBar.css';
 
-const Navbar = ()  => {
-    return <div className="Navbar">
-        <div className="LogoDiv">
-          <TravelLogo className='logo'/>  
-        </div>
-    </div>;
-}
-
-
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <div className="logo">
+        <img src="TravelLogo" alt="Logo" />
+      </div>
+      <div className="buttons">
+        <button className="nav-button">Login</button>
+        <button className="nav-button">SignUp</button>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;
